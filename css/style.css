@@ -19,10 +19,11 @@ h1,h2,h3,h4,h5,h6
     width: 100%;
     background-color: white;
 }
-.conainer
+.cont
 {
     width: 90%;
     padding: 15px;
+    margin: 0 auto;
 }
 .tittle-head
 {
@@ -48,7 +49,7 @@ h1,h2,h3,h4,h5,h6
     
     
 }
-.main-head .tittle-head p
+ .tittle-head p
 {
     color: #232044;
     text-align: center;
@@ -82,7 +83,7 @@ h1,h2,h3,h4,h5,h6
 .card-container
 {
     overflow: auto;
-    width: 85%;
+    width: 90%;
     margin: auto;
 }
 .card-data
@@ -151,5 +152,152 @@ h1,h2,h3,h4,h5,h6
     background-color: white;
     border: 1px solid #26BAFF;
     border-radius: 4px;
+}
+.feature-sec
+{
+    width: 100%;
+    background-color: white;
+    padding-top: 100px;
+    
+}
+.inner-blog
+{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 44px 15px;
+    position: relative;
+    text-align: center;
+}
+.inner-blog:hover
+{
+    background-color: #242047;
+}
+.img-blog
+{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.img-blog img
+{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/*
+img
+{
+    width: 100%;
+}
+*/
+.inner-blog:hover  .original-logo
+{
+    display: none;
+}
+.inner-blog:hover .color-img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.color-img
+{
+    display: none;
+}
+.data-blog
+{
+    text-align: center;
+}
+.data-blog h4
+{
+    font-weight: 600;
+    color: #232044;
+    font-size: 18px;
+    line-height: 1.3em;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    padding-top: 22px;
+}
+.inner-blog:hover h4
+{
+    color: #26BAFF;
+}
+.data-blog p
+{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
+.inner-blog:hover p
+{
+    color: #ffffff;
+}
+.inner-blog .line1
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -10px;
+    right: -10px;
+    
+}
+.inner-blog .line1:before
+{
+    content: "";
+    width: 1px;
+    height: 50%;
+    background-color: #26BAFF;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.inner-blog .line1:after
+{
+    content: "";
+    width: 50%;
+    height: 1px;;
+    background-color:#26BAFF;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.inner-blog:hover .line1
+{
+    width: 100%;
+    height: 100%;
+}
+.inner-blog .line2
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -10px;
+    left: -10px;
+    
+}
+.inner-blog .line2:before
+{
+    content: "";
+    width: 1px;
+    height: 50%;
+    background-color: #26BAFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.inner-blog .line2:after
+{
+    content: "";
+    width: 50%;
+    height: 1px;;
+    background-color:#26BAFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.inner-blog:hover .line2
+{
+    width: 100%;
+    height: 100%;
 }
 
