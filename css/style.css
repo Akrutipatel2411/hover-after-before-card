@@ -9,7 +9,7 @@ body,html
 {
     box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6
+h1,h2,h3,h4,h5,h6,p
 {
     margin: 0;
     padding: 0;
@@ -85,6 +85,7 @@ h1,h2,h3,h4,h5,h6
     overflow: auto;
     width: 90%;
     margin: auto;
+    padding-top: 20px;
 }
 .card-data
 {
@@ -99,6 +100,7 @@ h1,h2,h3,h4,h5,h6
     border-radius: 4px;
     background-color: white;
     overflow: hidden;
+    transition: 0.3s all ease;
 }
 .inner-card:hover
 {
@@ -137,15 +139,30 @@ h1,h2,h3,h4,h5,h6
     color: #ffffff;
     padding: 14px 30px;
     position: relative;
-    z-index: 1;
+    z-index: 11;
+    overflow: hidden;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     border: 1px solid transparent;
     border-radius: 4px;
     text-transform: uppercase;
+    transition: 0.3s all ease;
     
 }
+.main-head .card-content a::after
+{
+   content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: 0.3s all ease;
+    z-index: -1;
+}
+
 .main-head .card-content a:hover
 {
     color: #26BAFF;
@@ -167,6 +184,7 @@ h1,h2,h3,h4,h5,h6
     padding: 44px 15px;
     position: relative;
     text-align: center;
+    transition: 0.3s all ease;
 }
 .inner-blog:hover
 {
@@ -239,6 +257,7 @@ img
     height: 0;
     top: -10px;
     right: -10px;
+    transition: 0.3s all ease;
     
 }
 .inner-blog .line1:before
@@ -273,6 +292,7 @@ img
     height: 0;
     bottom: -10px;
     left: -10px;
+    transition: 0.3s all ease;
     
 }
 .inner-blog .line2:before
@@ -300,4 +320,52 @@ img
     width: 100%;
     height: 100%;
 }
+.team-section
+{
+    width: 100%;
+    background-color: white;
+    padding: 100px 0px;
+}
+.team-card
+{
+    width: 100%;
+    padding-bottom: 40px;
+}
+.team-img
+{
+    overflow: hidden;
+    max-height: 338px;
+    width: 100%;
+}
+.team-img:hover img
+{
+    transform: scale(1.1);
+}
+.team-img img
+{
+    transition: 0.3s all ease;
+    width: 100%;
+}
+.team-data
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.team-data h2
+{
+    color: #232044;
+    font-size: 26px;
+    line-height: 1.3em;
+    font-weight: 500;
+    padding-top: 20px;
+}
+.team-data p
+{
+    color: #232044;
+    font-size: 16px;
+    line-height: 1.7em;
+    font-weight: 400;
+}
+
 
